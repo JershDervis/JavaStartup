@@ -17,7 +17,6 @@ public class WindowsRegistry extends Utilities {
     /**
      * Call 'file' as the file to be installed to startup
      * Call 'regKeyName' as the registry name to be assigned
-     * Call 'registryType' as the registry directory type (LOCAL_MACHINE requires admin rights)
      * @param file
      * @param regKeyName
      */
