@@ -15,7 +15,7 @@ I am currently working on support for Mac and Linux operating systems.
 Example code usage:
 
     public void installToWindowsRegistryStartup() {
-        boolean isAdmin = false; //Refers to whether the current user as Administrator privileges
+        boolean isAdmin = false; //Refers to whether the current user has Administrator privileges
         WindowsRegistry installer = new WindowsRegistry(new File("C:\\example.jar"), "My App");
         if(isAdmin) {
             installer.installLocalMachine();
@@ -24,7 +24,7 @@ Example code usage:
         }
     }
     public void installToWindowsStartupFolder() {
-        boolean isAdmin = false; //Refers to whether the current user as Administrator privileges
+        boolean isAdmin = false; //Refers to whether the current user has Administrator privileges
         WindowsStartupFolder installer = new WindowsStartupFolder(new File("C:\\example.jar"));
         if(isAdmin) {
             installer.installLocalMachine();
