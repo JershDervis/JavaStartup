@@ -31,6 +31,12 @@ public class Utilities {
         return System.getenv("ProgramData");
     }
 
+    /**
+     * Copy File to Output File location
+     * @param sourceFile
+     * @param destFile
+     * @throws IOException
+     */
     public static void copyFile(File sourceFile, File destFile) throws IOException {
         if(!destFile.exists()) {
             destFile.createNewFile();
